@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="thumb">
+            <ul>
+                <li onclick="changeImgSrc('img/1.png')"><img src="img/1.png" alt=""></li>
+                <li onclick="changeImgSrc('img/2.png')"><img src="img/2.png" alt=""></li>
+                <li onclick="changeImgSrc('img/4.png')"><img src="img/4.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="cartBox">
+            <h2>puma classic</h2>
+            <img src="img/1.png" alt="" class="shoes">
+            <ul class="sizes">
+                <span>Size</span>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+
+            </ul>
+            <a href="#" class="btn" onclick="addToCart()"> Add To Cart</a>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script>
+    function changeImgSrc(src){
+        document.querySelector('.shoes').src = src;
+    }
+
+    function addToCart() {
+        event.preventDefault();
+        swal("Added to Cart!", "Your item has been added to the cart.", "success");
+    }
+</script>
+</html>
