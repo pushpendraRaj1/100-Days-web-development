@@ -1,0 +1,123 @@
+:root {
+    --background-color: #F7DC6F;
+    --text-color: #333333;
+    --accent-color: #FFC107;
+    --weather-icon-color: #F2C464;
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1000px;
+   
+}
+
+
+.search-bar {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .search-input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-input-group input {
+    width: 70%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .search-input-group button {
+    width: 30%;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+.search-input-group button:hover {
+    background-color: #c82333;
+}
+
+
+.weather-card {
+    width: 300px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    color: var(--text-color);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.weather-card {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .weather-card:hover {
+    background-color: #64B5F6;
+    color: #FFFFFF;
+  }
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.city-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.country-name {
+    font-size: 18px;
+    color: #666;
+}
+
+.weather-icon {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--weather-icon-color);
+}
+
+.weather-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.temperature {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feels-like,
+.humidity,
+.wind-speed {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
