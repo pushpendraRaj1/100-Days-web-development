@@ -89,6 +89,7 @@ button:hover{
   width: 170px;
 }
 
+
 @media (max-width: 430px){
   .wrapper{
     height: 255px;
